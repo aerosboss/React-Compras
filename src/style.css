@@ -1,0 +1,37 @@
+/* Estilo de App similar a mercado libre */
+
+.product {
+    display: inline-block;
+    background-color: mediumpurple;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 20em;
+    margin: 4px 3px;
+    /* padding: 3px; */
+    width: 11em;
+}
+
+.product h1 {
+    background-color: black;    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.product h2 {
+    font-size: 0.8em;
+    margin: 4px 3px;
+    padding: 3px;
+    width: 10em;
+}
+
+
+body {
+    background-color: darkslateblue;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
