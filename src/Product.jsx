@@ -55,12 +55,12 @@ export const Product = (props) => {
             <h1>{stateProd.nameProduct}</h1>
             <h2>Precio: ${stateProd.priceProduct}</h2>
             <span>Color: </span><br/>
-            <input type="radio" id="blue" name="color" value="Azul" onClick={handleProduct}></input>
-            <label htmlFor="blue">Azul</label><br/>
-            <input type="radio" id="black" name="color" value="Negro" onClick={handleProduct}></input>
-            <label htmlFor="black">Negro</label><br/>
-            <input type="radio" id="white" name="color" value="Blanco" onClick={handleProduct}></input>
-            <label htmlFor="green">Blanco</label><br/>
+            <input type="radio" id={"blue"+props.sufixIdProduct} name="color" value="Azul" onClick={handleProduct}></input>
+            <label htmlFor={"blue"+props.sufixIdProduct}>Azul</label><br/>
+            <input type="radio" id={"black"+props.sufixIdProduct} name="color" value="Negro" onClick={handleProduct}></input>
+            <label htmlFor={"black"+props.sufixIdProduct}>Negro</label><br/>
+            <input type="radio" id={"white"+props.sufixIdProduct} name="color" value="Blanco" onClick={handleProduct}></input>
+            <label htmlFor={"white"+props.sufixIdProduct}>Blanco</label><br/>
             <input type="submit" onClick="" value="Agregar a Carrito"/>
             <div> <img src={stateProd.imageProduct} alt={stateProd.nameProduct}/> 
             {/* URL: {stateProd.imageProduct}  */}

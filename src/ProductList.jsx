@@ -27,28 +27,16 @@ export const ProductList = () => {
 
     const [product, setProduct] = useState(state);
 
-    // const handleProduct1 = (e) => {
-    //     console.log("Fui prseionado");
-    //     console.log("e.target es", e.target);
-
-    //     const modifyProduct = state.filter( (element) => {
-    //         console.log("element = ", element);
-    //         console.log("e.target.value = ", e.target.value);
-    //         return element.colorProduct === e.target.value;
-    //     } )
-    //     console.log("modify product is ", modifyProduct);
-    // }
-
-
     return (
         <>
         {
-            state.map( (prod)=> (
+            state.map( (prod,index)=> (
                 <Product
                     nameProduct={prod.nameProduct}
                     priceProduct={prod.priceProduct}
                     colorProduct={prod.colorProduct}
                     imageProduct={prod.imageProduct}
+                    sufixIdProduct={index}
                     // handle={handleProduct1}
                 />
             ) )

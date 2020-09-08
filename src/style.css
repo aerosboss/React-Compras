@@ -1,13 +1,12 @@
 /* Estilo de App similar a mercado libre */
 
 .product {
-    display: inline-block;
     background-color: mediumpurple;
     border: 1px solid black;
     border-radius: 10px;
-    height: 20em;
+    float: left;
+    height: 22em;
     margin: 4px 3px;
-    /* padding: 3px; */
     width: 11em;
 }
 
